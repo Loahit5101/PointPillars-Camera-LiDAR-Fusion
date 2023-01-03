@@ -1,0 +1,6 @@
+# ninja log v5
+0	12988	1672625014650181927	/home/loahit/Downloads/PointPillars-main/ops/build/temp.linux-x86_64-cpython-39/voxelization/voxelization_cpu.o	46943f89e4a9ed34
+0	13072	1672625014734181511	/home/loahit/Downloads/PointPillars-main/ops/build/temp.linux-x86_64-cpython-39/voxelization/voxelization.o	cb1d9b3c05dfc622
+0	13510	1672625015174179329	/home/loahit/Downloads/PointPillars-main/ops/build/temp.linux-x86_64-cpython-39/voxelization/voxelization_cuda.o	4f87a8386c6574d2
+3	1316	1672625016766171435	/home/loahit/Downloads/PointPillars-main/ops/build/temp.linux-x86_64-cpython-39/iou3d/iou3d_kernel.o	d586995ee4b4df35
+2	12086	1672625027530117984	/home/loahit/Downloads/PointPillars-main/ops/build/temp.linux-x86_64-cpython-39/iou3d/iou3d.o	e7d52413f64cfb5c
