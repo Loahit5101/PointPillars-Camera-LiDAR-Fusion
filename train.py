@@ -6,8 +6,8 @@ import pdb
 
 from utils import setup_seed
 from dataset import Kitti, get_dataloader
-from model import PointPillars
-from loss import Loss
+from network import PointPillars
+from losses import Loss
 from torch.utils.tensorboard import SummaryWriter
 
 
