@@ -5,9 +5,9 @@ from torch.nn import functional as F
 import sys
 
 
-class fusion(nn.Module):
+class FusionNet(nn.Module):
     def __init__(self):
-        super(fusion, self).__init__()
+        super(FusionNet, self).__init__()
         self.name = 'fusion_layer'
         self.corner_points_feature = Sequential(
             nn.Conv2d(24,48,1),
