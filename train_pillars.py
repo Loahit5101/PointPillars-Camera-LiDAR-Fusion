@@ -91,9 +91,8 @@ def main(args):
             batched_bbox_labels = anchor_target_dict['batched_labels'].reshape(-1)
             batched_label_weights = anchor_target_dict['batched_label_weights'].reshape(-1)
             batched_bbox_reg = anchor_target_dict['batched_bbox_reg'].reshape(-1, 7)
-            # batched_bbox_reg_weights = anchor_target_dict['batched_bbox_reg_weights'].reshape(-1)
             batched_dir_labels = anchor_target_dict['batched_dir_labels'].reshape(-1)
-            # batched_dir_labels_weights = anchor_target_dict['batched_dir_labels_weights'].reshape(-1)
+            
             
             pos_idx = (batched_bbox_labels >= 0) & (batched_bbox_labels < args.nclasses)
             bbox_pred = bbox_pred[pos_idx]

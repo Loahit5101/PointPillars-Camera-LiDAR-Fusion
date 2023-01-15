@@ -123,6 +123,13 @@ class PointPillars(nn.Module):
             cur_bbox_pred[:, -1] = limit_period(cur_bbox_pred[:, -1].detach().cpu(), 1, np.pi).to(cur_bbox_pred) # [-pi, 0]
             cur_bbox_pred[:, -1] += (1 - cur_bbox_dir_cls_pred) * np.pi
 
+            # Disabling nms
+            #cur_bbox_cls_pred = cur_bbox_cls_pred[score_inds]
+            #cur_bbox_pred = cur_bbox_pred[score_inds]
+            #cur_bbox_dir_cls_pred = cur_bbox_dir_cls_pred[score_inds]
+            #cur_bbox_pred[:, -1] = limit_period(cur_bbox_pred[:, -1].detach().cpu(), 1, np.pi).to(cur_bbox_pred) # [-pi, 0]
+            #cur_bbox_pred[:, -1] += (1 - cur_bbox_dir_cls_pred) * np.pi
+
             ret_bboxes.append(cur_bbox_pred)
             ret_labels.append(torch.zeros_like(cur_bbox_pred[:, 0], dtype=torch.long) + i)
             ret_scores.append(cur_bbox_cls_pred)
