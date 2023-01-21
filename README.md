@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ### Training
 ```
-python train.py --data_root your_dataset_path
+python train_pillars.py --data_root your_dataset_path
 ```
 
 ### Testing 
@@ -58,17 +58,65 @@ python test.py --ckpt pretrained_model_path --pc_path your_pc_path
 python evaluate.py --ckpt pretrained_model_path --data_root your_dataset_path
 ```
 ## CLOC Fusion Network
+Code to train CLOCs is inside CLOC_fusion folder
 
-[Soon]
+## Dataset
 
-## Tasks 
- 
-- [x] Implement PointPillars Network
-- [x] Train and evaluate PointPillars Network
-- [x] Implement CLOC Fusion Network
-- [ ] Train and evaluate performance after fusion
-- [ ] Add results
-- [ ] Clean up code
+CLOCs requires 3D detection results and 2D detection results (from Cascade R-CNN in this case) before nms step.
+ANy 3D or 2D detector can be used with CLOC provided the detections are in KITTI format.
+
+Run the below command to generate 3D detections or download from below link
+```
+python evaluate.py --ckpt pretrained_model_path --data_root your_dataset_path
+```
+2D and 3D detections 3D can also be downloaded from this link.
+
+```
+python generate_data.py
+```
+Generated inputs are stored in fusion_input folder
+
+Expected structure:
+```
+.
+└── clocs_data
+    ├── 2D
+    │   ├── 000000.txt
+    │   ├── 000001.txt
+    │   └── 000002.txt
+    ├── 3D
+    │   ├── 000000.pt
+    │   ├── 000001.pt
+    │   └── 000002.pt
+    ├── index
+    │   ├── train.txt
+    │   ├── trainval.txt
+    │   └── val.txt
+    ├── info
+    │   ├── kitti_infos_trainval.pkl
+    │   └── kitti_infos_val.pkl
+    └── input_data
+        ├── 000000.pkl
+        ├── 000001.pkl
+        └── 000002.pkl
+```
+
+### Training
+```
+python train.py 
+```
+### Testing 
+```
+python test.py 
+```
+### Evaluation
+```
+python evaluate.py 
+```
+### Pretrained models
+Pretrained models are available in the pretrained models folder 
+
+ADD RESULTS
 
 ## References
  
