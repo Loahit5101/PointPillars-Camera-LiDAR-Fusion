@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ## Dataset
 
 
-1. Download [point cloud](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip)(29GB), [images](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip)(12 GB), [calibration files](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip)(16 M and [labels](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip)(5 MB).
+1. Download [point cloud](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip)(29GB), [images](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip)(12 GB), [calibration files](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip)(16 MB) and [labels](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip)(5 MB).
 
 2. Pre-process KITTI dataset
 
@@ -85,9 +85,9 @@ Expected structure:
     │   ├── 000001.txt
     │   └── 000002.txt
     ├── 3D
-    │   ├── 000000.pt
-    │   ├── 000001.pt
-    │   └── 000002.pt
+    │   ├── 000000.pkl
+    │   ├── 000001.pkl
+    │   └── 000002.pkl
     ├── index
     │   ├── train.txt
     │   ├── trainval.txt
@@ -96,9 +96,9 @@ Expected structure:
     │   ├── kitti_infos_trainval.pkl
     │   └── kitti_infos_val.pkl
     └── input_data
-        ├── 000000.pkl
-        ├── 000001.pkl
-        └── 000002.pkl
+        ├── 000000.pt
+        ├── 000001.pt
+        └── 000002.pt
 ```
 
 ### Training
