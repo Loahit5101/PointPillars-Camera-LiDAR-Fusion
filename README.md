@@ -1,7 +1,16 @@
 # PointPillars with LiDAR-Camera Fusion for 3D Object Detection
 
 - Implementation of PointPillars Network with camera fusion for 3D object Detection in Autonomous Driving.  
-- Object Detection outputs from PointPillars and a 2D object detector is fused using a Fusion Network ([CLOCs](https://arxiv.org/pdf/2009.00784.pdf)) to achieve improved performance compared to LiDAR only baseline.
+- Object Detection outputs from PointPillars and a 2D object detector are fused using a Fusion Network ([CLOCs](https://arxiv.org/pdf/2009.00784.pdf)) to achieve improved performance compared to LiDAR only baseline.
+
+## Performance
+
+|     Model     |   3D AP (Easy,Moderate,Hard)   |
+| ------------- |:-------------:|
+| PointPillars  |77.98, 57.86, 66.02|         
+| PointPillars+CLOCs|         81.43, 60.05, 67.15         |
+| **Improvement**|              **3.45, 2.19, 1.13**    |
+
 
 ## Setup
 Clone this repository and install required libraries in a seperate virtual environment.
@@ -115,8 +124,6 @@ python evaluate.py
 ```
 ### Pretrained models
 Pretrained models are available in the pretrained models folder 
-
-ADD RESULTS
 
 ## References
  
