@@ -69,12 +69,12 @@ Run the below command to generate 3D detections or download from below link
 ```
 python evaluate.py --ckpt pretrained_model_path --data_root your_dataset_path
 ```
-2D and 3D detections 3D can also be downloaded from this link.
+2D and 3D detections can also be downloaded from this [link](https://drive.google.com/drive/folders/1sL91TnLjprSRiEzQtmC4NBaP2zm4flQe?usp=share_link).
 
 ```
 python generate_data.py
 ```
-Generated inputs are stored in fusion_input folder
+Generated inputs are stored in input_data folder
 
 Expected structure:
 ```
