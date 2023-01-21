@@ -1,0 +1,7 @@
+2023-01-20 20:43:33,536   INFO  Loading KITTI dataset
+2023-01-20 20:43:33,600   INFO  Total samples for KITTI dataset: 3769
+2023-01-20 20:43:34,704   INFO  #################################
+2023-01-20 20:43:34,704   INFO  # EVAL1
+2023-01-20 20:43:34,704   INFO  #################################
+2023-01-20 20:43:34,704   INFO  Generate output labels...
+2023-01-20 20:44:21,548   INFO  Generate output done

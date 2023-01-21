@@ -1,0 +1,8 @@
+# ninja log v5
+1	1421	1674074066208478216	/home/loahit/CLOCs_LQS-6b8284bce64989dc4dfc55d2cdae407ea20e27e5/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_nms_kernel.o	8280f6fb401d31cc
+1	12377	1674074077160439921	/home/loahit/CLOCs_LQS-6b8284bce64989dc4dfc55d2cdae407ea20e27e5/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_cpu.o	389e14b91148cd09
+1	12427	1674074077208439753	/home/loahit/CLOCs_LQS-6b8284bce64989dc4dfc55d2cdae407ea20e27e5/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_nms.o	1caf313b752bc32b
+1	12473	1674074077256439585	/home/loahit/CLOCs_LQS-6b8284bce64989dc4dfc55d2cdae407ea20e27e5/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_nms_api.o	e034539edbbbb2ec
+2	419	1674074077924437251	/home/loahit/CLOCs_LQS-6b8284bce64989dc4dfc55d2cdae407ea20e27e5/build/temp.linux-x86_64-cpython-39/pcdet/ops/roiaware_pool3d/src/roiaware_pool3d_kernel.o	8c8cc091315bb3f7
+2	11237	1674074088744399457	/home/loahit/CLOCs_LQS-6b8284bce64989dc4dfc55d2cdae407ea20e27e5/build/temp.linux-x86_64-cpython-39/pcdet/ops/roiaware_pool3d/src/roiaware_pool3d.o	21ee63e5069d9807
+3	1311	1674074187864054816	/home/loahit/CLOCs_LQS/build/temp.linux-x86_64-cpython-39/pcdet/ops/iou3d_nms/src/iou3d_nms_kernel.o	50dae7092cfef344
